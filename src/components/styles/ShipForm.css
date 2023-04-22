@@ -1,0 +1,54 @@
+.aircrafts__form__container {
+  position: fixed;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.377);
+  z-index: 1;
+  backdrop-filter: blur(1px);
+}
+
+.aircrafts__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: lightblue;
+  border: 1px solid rgb(93, 133, 219);
+  border-radius: 5px;
+  padding: 20px;
+  width: min(85%, 350px);
+}
+
+.aircrafts__form__label {
+  display: flex;
+  flex-direction: columns;
+}
+
+.aircrafts__form__input, .aircrafts__form__dropdown {
+  border: 1px solid rgb(105, 105, 105);
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+  width: 100%;
+}
+
+.aircrafts__form__buttons__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.aircrafts__form__button {
+  width: 90px;
+  background-color: rgb(93, 133, 219);
+  color: white;
+  padding: 5px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.aircrafts__form__button-cancel {
+  background-color: red;
+}

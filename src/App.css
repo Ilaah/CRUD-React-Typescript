@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+root {
+  --general-text-size: 50px;
+  --general-text-color: rgb(172, 13, 13);
+  --titles-text-size: 50px;
+  --titles-text-color: rgb(87, 26, 26);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+}
+
+body {
+  min-height: 100vh;
+  background-image: url(https://img.freepik.com/vector-gratis/fondo-cielo-pastel-acuarela-pintado-mano_23-2148920282.jpg?w=2000);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+}
+
+button,
+select {
+  cursor: pointer;
+}
+
+input,
+button,
+select {
+  outline: none;
+}
+
+.aircrafts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aircrafts__add-ship {
+  background-color: rgb(93, 133, 219);
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.aircrafts-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: min(100%, 1024px);
+}
